@@ -1,0 +1,18 @@
+a = 8
+
+#exponente
+print(a**3)
+
+#division con parte entera
+print(a//3)
+
+#modulo
+print(a%3)
+
+triple = """hello everybody
+    how are you"""
+
+print(triple)
+
+#muestra por pantalla tres veces la suma de a más 1 después de pasarlo a cadenas
+print(str(a+1)*5)

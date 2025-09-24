@@ -1,0 +1,26 @@
+string = "hi hello hi"
+words = ["hi", "everybody", "what's", "up"]
+word = "abcdefghijklmnñopqrstuvwxyz"
+
+# muestra el resto de la cadena desde la posición 5 (empezando desde 0 y no mostrando la posición 5)
+print(string[5])
+
+# muestra lo que está contenido entre la posición 5 y 11 sin contar con la posición 11
+print(string[5:11])
+
+# hace un substring desde la posición 3 hasta la 13 ya que no cuenta la última del nº, después va cogiendo letras
+# de 3 en 3 SIN empezar en 0
+print(word[3:14:3])
+
+# almacena en la variable la lista de palabras lo que esté almacenado en la variable por el caracter entre comillas dobles
+new_phrase = " ".join(words)
+print(new_phrase)
+
+# se puede comprobar las cadenas con operadores
+print(string != new_phrase)
+
+# muestra la longitud de la cadena en numeros enteros
+#print(len(string))
+
+# compara la longitud de las cadenas
+print(len(string) > len(new_phrase))

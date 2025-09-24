@@ -1,0 +1,14 @@
+user_name = input("What's your name?: ")
+print("Hi", user_name)
+
+age = int(input("Insert your age: "))
+age+=1
+print("You'll be", age, "next year")
+
+while age < 18:
+    print("You're", age, "so you are a minor")
+    age+=1
+
+print("You're", age, "so you're an adult")
+
+#hola mierda

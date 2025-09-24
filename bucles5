@@ -1,0 +1,12 @@
+age = int(input("How old are you?: "))
+num = 3
+
+if age > 18:
+    print("You're an adult")
+elif age == 18:
+    print("You're JUST BECAME an adult")
+else:
+    print("You're a minor")
+
+var = "par" if (num % 2 == 0) else "impar"
+print(var)
