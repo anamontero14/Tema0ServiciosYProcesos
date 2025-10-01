@@ -23,15 +23,8 @@ fraseCodificada = ""
 
 #recorro la frase que ha introducido el usuario
 for i in frase:
-
-    #cojo la letra de la frase y compruebo si está en el diccionario
-    if (i in diccionario):
-
-        #a la frase codificada le concateno el valor de la letra ya que el valor es la codificación
-        fraseCodificada += diccionario[i]
-    #como en la codificación no están todas las letras, si no se encuentra se añade el mismo caracter
-    else:
-        fraseCodificada += i
+    #si esta en el diccionario devuelve la letra y si no devuelve la propia letra
+    fraseCodificada += diccionario.get(i, i)
 
     #aumento el contador
     contador += 1

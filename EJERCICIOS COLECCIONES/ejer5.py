@@ -21,8 +21,6 @@ for i in range(1,100):
 #pedir un valor
 num = int(input("Introduce un número: "))
 
-print(lista)
-
 numeroVeces = lista.count(num)
 
 #muestro el número de veces que se encuentra el valor introducido en la lista
