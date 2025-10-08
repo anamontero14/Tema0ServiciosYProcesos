@@ -1,0 +1,3 @@
+from Animal import *
+
+#objetos

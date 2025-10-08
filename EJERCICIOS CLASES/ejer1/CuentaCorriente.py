@@ -2,14 +2,8 @@
 class CuentaCorriente:
     #se inicializa el nombre a una cadena vacía
     nombre = ""
-
-    #creación de constructor
-    def __init__(self, dni, saldo):
-        self.nombre = ""
-        self.dni = dni
-        self.saldo = saldo
     
-    def __init__(self, dni, nombre, saldo):
+    def __init__(self, dni, saldo, nombre=""):
         self.dni = dni
         self.nombre = nombre
         self.saldo = saldo
@@ -35,7 +29,7 @@ class CuentaCorriente:
 
     #convierte el objeto en cadena
     def __str__(self):
-        return "Nombre del titular: ", self.nombre, " | Saldo: ", str(self.saldo)
+        return "DNI del titular: " + self.dni + " | Saldo: " + str(self.saldo)
     
     #método equals que define que dos objetos son iguales si su dni es el mismo
     def __eq__(self, otroObjeto):
@@ -54,5 +48,3 @@ class CuentaCorriente:
             menor = True
         
         return menor
-
-    
