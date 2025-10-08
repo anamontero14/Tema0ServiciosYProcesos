@@ -9,6 +9,6 @@ class Animal:
         return ""
     
     def __str__(self):
-        return "Me llamo "+ self.nombre + ", tengo " + self.numPatas + " patas y sueno así: " + Animal.habla()
+        return "Me llamo "+ self.nombre + ", tengo " + str(self.numPatas) + " patas y sueno así: " + self.habla()
     
     
